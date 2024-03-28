@@ -1,3 +1,4 @@
 # 2048
 In the puzzle game 2048, you have to put together numbered tiles on a grid until you get to the tile that has the number 2048 on it. You can swipe the tiles up, down, left, or right, and they will all move as far as they can in that way. There is one tile with the sum of the two numbers that is made when two tiles with the same number hit each other. The game is over when you can't move anymore, either because the grid is full or because there are no more swaps that can be made. Getting to the 2048 tile and getting the best score is the goal.
-The team members are Mariana Gonzalez and Natalia Gomez
+
+Members: Mariana Gonzalez and Natalia Gomez
