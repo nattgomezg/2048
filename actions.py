@@ -1,11 +1,8 @@
-def check_game_over(current_board):
-  pass
+def get_user_input():
+    pass
 
-def is_board_full(current_board):
-  pass
+def merge_tiles(current_board, direction):
+    pass
 
-def generate_new_tile(current_board):
-  pass
-
-def update_score(current_score, tile_value):
-  pass
+def add_new_tile(current_board):
+    pass
