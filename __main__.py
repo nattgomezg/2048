@@ -1,21 +1,37 @@
-from board import create_new_board, print_board, move_up, move_down, move_left, move_right, check_game_over
+from board import create_new_board, print_board
+from actions import  add_new_tile, move
 
 with open('README.md', 'r') as f:
     print(f.read())
 
+# Setup phase
+board = create_new_board()
+
 while True:
-    command = input("Enter a command:")
+    # Input / per-turn phase
+    add_new_tile(board)
+    print_board(board)
+    command = input("Enter a comand: ")
+
     if command == "right":
-        move_right()
+        # Per-command phase
+        move(board, "right")
     elif command == "left":
-        move_left()
+        move(board, "left")
     elif command == "up":
-        move_up()
+        move(board, "up")
     elif command == "down":
-        move_down()
+        move(board, "down")
     elif command == "new board":
-        create_new_board and print_board()
+        create_new_board()
     elif command == "game over":
-        check_game_over()
+        if check_game_over(board):
+            print_board(board)
+    elif command == "game over":
+        if check_game_over(board):
+            print("Game Over :( )")
+        else:
+            print("Game is not over yet.")
     else:
-        print("I did not understand this command.")
+        print("I did not understand.")
+    
