@@ -1,8 +1,11 @@
+row_Count = 4
+column_Count = 4
+
 def create_new_board():
-    board = [["", "", "", ""],
-             ["", "", "", ""],
-             ["", "", "", ""],
-             ["", "", "", ""]]
+    board = [[" ", " ", " ", " "],
+             [" ", " ", " ", " "],
+             [" ", " ", " ", " "],
+             [" ", " ", " ", " "]]
     return board
 
 def print_board(board):
@@ -17,9 +20,5 @@ def print_board(board):
 {board[3][0]} | {board[3][1]} | {board[3][2]} | {board[3][3]}
 """
     )
-
-def move(direction, current_board):
-    pass
-
-def check_game_over(current_board):
-    pass
+def drop_piece(board, row, col, piece):
+    board[row][col] = piece
