@@ -34,4 +34,4 @@ while True:
             print("Game is not over yet.")
     else:
         print("I did not understand.")
-    
+    #if told another thing indicate that it doesn't respond to that
